@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="{{ image.image.url }}">
+            <div class="caption">
+            <h3>{{ image.title }}</h3>
+            <p>{{ image.description }}</p>
+        </div>
+        </div>
+    </div>
+{% endblock content %}
